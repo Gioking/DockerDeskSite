@@ -51,12 +51,14 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="#local">Sessione Locale</a></li>
+          <li><a class="nav-link scrollto" href="#remote">Sessione Remota</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Images</a></li>
+          <li><a class="nav-link scrollto" href="#download">Download</a></li>
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#summary">Get Started</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -73,7 +75,7 @@
           <h1>DockerDek</h1>
           <h2>Con DockerDesk, trasforma il tuo workflow in un viaggio fluido e veloce verso la dockerizzazione delle tue applicazioni - semplicità e potenza in un clic.</h2>
           <div>
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="#summary" class="btn-get-started scrollto">Get Started</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
@@ -86,10 +88,131 @@
 
   <main id="main">
 
+    <section id="summary" class="about">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <h3 data-aos="fade-up">DockerDesk: Un'applicazione .NET per la Gestione di Ambienti Docker</h3>
+            <p data-aos="fade-up" data-aos-delay="100">
+              DockerDesk è un'applicazione sviluppata in .NET Framework 4.7.2, progettata per offrire un controllo completo e versatile degli ambienti Docker sia in locale che su macchine remote. Utilizzando riferimenti a DLL di terze parti come Newtonsoft.Json per la gestione dei dati in formato JSON e Renci.SshNet per le connessioni SSH sicure, DockerDesk fornisce un'interfaccia utente grafica intuitiva e una serie di funzionalità avanzate per la gestione efficiente dei container, delle immagini, dei volumi e delle reti Docker.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-layer"></i>
+              <h4>Funzionalità Principali</h4>
+              <ul>
+                <li>Connessione e monitoraggio dello stato di Docker in locale e su macchine remote.</li>
+                <li>Gestione delle immagini Docker: caricamento, creazione ed eliminazione in ambiente locale e remoto.</li>
+                <li>Controllo completo dei container Docker: visualizzazione, esecuzione, rimozione e inspezione, sia localmente che a distanza.</li>
+                <li>Gestione avanzata dei volumi e delle reti Docker, consentendo operazioni di creazione, rimozione e configurazione.</li>
+                <li>Utilizzo di variabili d'ambiente per personalizzare i container Docker, con supporto alla lettura e scrittura di file JSON.</li>
+                <li>Interfaccia utente grafica intuitiva per un'interazione facilitata e un'esperienza utente migliorata.</li>
+                <li>Trasferimento e gestione di file tra l'host locale e la macchina remota attraverso connessioni SSH sicure.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Summary Section -->
+
+
+
+    <!-- ======= Local Section ======= -->
+    <section id="local" class="about">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <h3 data-aos="fade-up">DockerDesk Sessione Locale</h3>
+            <!-- Existing content -->
+
+            <!-- New block for features -->
+            <div data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-layer"></i>
+              <h4>Funzionalità di DockerDesk</h4>
+              <ul>
+                <li>Verifica e visualizzazione dello stato di esecuzione di Docker.</li>
+                <li>Gestione delle immagini Docker: caricamento, creazione ed eliminazione.</li>
+                <li>Gestione dei container Docker: caricamento, rimozione ed esecuzione con configurazioni avanzate.</li>
+                <li>Inspezione dettagliata dei container Docker.</li>
+                <li>Gestione dei volumi Docker: caricamento, creazione e rimozione.</li>
+                <li>Gestione delle reti Docker: caricamento, creazione, rimozione, connessione e disconnessione dei container.</li>
+                <li>Caricamento e visualizzazione delle variabili d'ambiente dei container Docker.</li>
+                <li>Interazione utente avanzata tramite l'interfaccia GUI.</li>
+                <li>Lettura e scrittura di file JSON per gestire le variabili d'ambiente dei container.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Local Section -->
+
+    <section id="remote" class="about">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <h3 data-aos="fade-up">DockerDesk Sessione Remota</h3>
+
+            <!-- New block for features -->
+            <div data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-layer"></i>
+              <h4>Funzionalità di DockerDesk</h4>
+              <ul>
+                <li>Connessione SSH per gestire Docker su macchine Linux remote.</li>
+                <li>Caricamento e visualizzazione di immagini Docker dalla macchina remota.</li>
+                <li>Creazione ed eliminazione di immagini Docker sulla macchina remota.</li>
+                <li>Caricamento e visualizzazione di container Docker dalla macchina remota.</li>
+                <li>Rimozione ed esecuzione di container Docker sulla macchina remota con configurazioni avanzate.</li>
+                <li>Inspezione dettagliata dei container Docker sulla macchina remota.</li>
+                <li>Gestione dei volumi Docker sulla macchina remota: caricamento, creazione e rimozione.</li>
+                <li>Gestione delle reti Docker sulla macchina remota: caricamento, creazione, rimozione, connessione e disconnessione dei container.</li>
+                <li>Caricamento e visualizzazione delle variabili d'ambiente dei container Docker sulla macchina remota.</li>
+                <li>Trasferimento e decompressione di file sulla macchina remota via SSH.</li>
+                <li>Interfaccia grafica per la gestione della directory di lavoro locale e remota.</li>
+                <li>Lettura e scrittura di file JSON per gestire le variabili d'ambiente dei container Docker.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Remote Section -->
+
+    <section id="download" class="about">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <img src="assets/img/download-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <h3 data-aos="fade-up">Download DockerDesk</h3>
+            <p data-aos="fade-up" data-aos-delay="100">
+              DockerDesk è disponibile per il download sia come codice sorgente che come applicazione già compilata. Questo permette una grande flessibilità per sviluppatori e utenti finali, offrendo la possibilità di personalizzare o utilizzare direttamente il software in base alle proprie esigenze.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <a href="https://github.com/Gioking/DockerDesk" class="btn btn-primary">Scarica il Codice Sorgente</a>
+              <a href="link-alla-pagina-di-download-dell'applicazione-compilata" class="btn btn-secondary">Scarica l'App Compilata</a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400">
+              <h4>Sostieni il Progetto</h4>
+              <p>Se apprezzi DockerDesk e vuoi supportare lo sviluppo futuro, considera di fare una donazione al nostro progetto.</p>
+              <a href="link-alla-pagina-di-donazione" class="btn btn-success">Dona</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Download Section -->
+
+
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
-
         <div class="row justify-content-between">
           <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
             <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
@@ -113,7 +236,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
@@ -440,7 +562,7 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Team</h2>
-          <p>Our team is always here to help</p>
+          <p>Il nostro team</p>
         </div>
 
         <div class="row">
