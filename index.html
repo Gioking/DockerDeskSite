@@ -51,13 +51,20 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#local">Sessione Locale</a></li>
-          <li><a class="nav-link scrollto" href="#remote">Sessione Remota</a></li>
+          <li><a data-i18n="sesslocal" class="nav-link scrollto" href="#local">Locale Session</a></li>
+          <li><a data-i18n="sessremote" class="nav-link scrollto" href="#remote">Remote Session</a></li>
           <li><a class="nav-link scrollto" href="#download">Download</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Images</a></li>
+          <li><a data-i18n="images" class="nav-link scrollto" href="#portfolio">Images</a></li>
           <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a data-i18n="contact" class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#" onclick="changeLanguage('it')">Italiano</a></li>
+              <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+            </ul>
+          </li>
           <li><a class="getstarted scrollto" href="#summary">Get Started</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -73,13 +80,12 @@
       <div class="row gy-4">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1>DockerDesk</h1>
-          <h2>Con DockerDesk, trasforma il tuo workflow in un viaggio fluido e veloce verso la dockerizzazione delle tue applicazioni - semplicità e potenza in un clic.</h2>
+          <h2 data-i18n="getstartedtext">Con DockerDesk, trasforma il tuo workflow in un viaggio fluido e veloce verso la dockerizzazione delle tue applicazioni - semplicità e potenza in un clic.</h2>
           <div>
             <a href="#summary" class="btn-get-started scrollto">Get Started</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <!-- <img src="assets/img/hero-img.svg" class="img-fluid animated" alt=""> -->
           <img src="assets/img/ddesk/docker.svg" style="width:500px;" class="img-fluid animated" alt="">
         </div>
       </div>
@@ -96,21 +102,21 @@
             <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
           </div>
           <div class="col-lg-6 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">DockerDesk: Un'applicazione .NET per la Gestione di Ambienti Docker</h3>
-            <p data-aos="fade-up" data-aos-delay="100">
+            <h3 data-i18n="whatdocker1" data-aos="fade-up">DockerDesk: Un'applicazione .NET per la Gestione di Ambienti Docker</h3>
+            <p data-i18n="whatdocker2" data-aos="fade-up" data-aos-delay="100">
               DockerDesk è un'applicazione sviluppata in .NET Framework 4.7.2, progettata per offrire un controllo completo e versatile degli ambienti Docker sia in locale che su macchine remote. Utilizzando riferimenti a DLL di terze parti come Newtonsoft.Json per la gestione dei dati in formato JSON e Renci.SshNet per le connessioni SSH sicure, DockerDesk fornisce un'interfaccia utente grafica intuitiva e una serie di funzionalità avanzate per la gestione efficiente dei container, delle immagini, dei volumi e delle reti Docker.
             </p>
             <div data-aos="fade-up" data-aos-delay="300">
               <i class="bx bx-layer"></i>
-              <h4>Funzionalità Principali</h4>
+              <h4 data-i18n="mainfunc">Funzionalità Principali</h4>
               <ul>
-                <li>Connessione e monitoraggio dello stato di Docker in locale e su macchine remote.</li>
-                <li>Gestione delle immagini Docker: caricamento, creazione ed eliminazione in ambiente locale e remoto.</li>
-                <li>Controllo completo dei container Docker: visualizzazione, esecuzione, rimozione e inspezione, sia localmente che a distanza.</li>
-                <li>Gestione avanzata dei volumi e delle reti Docker, consentendo operazioni di creazione, rimozione e configurazione.</li>
-                <li>Utilizzo di variabili d'ambiente per personalizzare i container Docker, con supporto alla lettura e scrittura di file JSON.</li>
-                <li>Interfaccia utente grafica intuitiva per un'interazione facilitata e un'esperienza utente migliorata.</li>
-                <li>Trasferimento e gestione di file tra l'host locale e la macchina remota attraverso connessioni SSH sicure.</li>
+                <li data-i18n="mf1">Connessione e monitoraggio dello stato di Docker in locale e su macchine remote.</li>
+                <li data-i18n="mf2">Gestione delle immagini Docker: caricamento, creazione ed eliminazione in ambiente locale e remoto.</li>
+                <li data-i18n="mf3">Controllo completo dei container Docker: visualizzazione, esecuzione, rimozione e inspezione, sia localmente che a distanza.</li>
+                <li data-i18n="mf4">Gestione avanzata dei volumi e delle reti Docker, consentendo operazioni di creazione, rimozione e configurazione.</li>
+                <li data-i18n="mf5">Utilizzo di variabili d'ambiente per personalizzare i container Docker, con supporto alla lettura e scrittura di file JSON.</li>
+                <li data-i18n="mf6">Interfaccia utente grafica intuitiva per un'interazione facilitata e un'esperienza utente migliorata.</li>
+                <li data-i18n="mf7">Trasferimento e gestione di file tra l'host locale e la macchina remota attraverso connessioni SSH sicure.</li>
               </ul>
             </div>
           </div>
@@ -134,17 +140,17 @@
             <!-- New block for features -->
             <div data-aos="fade-up" data-aos-delay="300">
               <i class="bx bx-layer"></i>
-              <h4>Funzionalità di DockerDesk</h4>
+              <h4 data-i18n="dockerfunc">Funzionalità di DockerDesk</h4>
               <ul>
-                <li>Verifica e visualizzazione dello stato di esecuzione di Docker.</li>
-                <li>Gestione delle immagini Docker: caricamento, creazione ed eliminazione.</li>
-                <li>Gestione dei container Docker: caricamento, rimozione ed esecuzione con configurazioni avanzate.</li>
-                <li>Inspezione dettagliata dei container Docker.</li>
-                <li>Gestione dei volumi Docker: caricamento, creazione e rimozione.</li>
-                <li>Gestione delle reti Docker: caricamento, creazione, rimozione, connessione e disconnessione dei container.</li>
-                <li>Caricamento e visualizzazione delle variabili d'ambiente dei container Docker.</li>
-                <li>Interazione utente avanzata tramite l'interfaccia GUI.</li>
-                <li>Lettura e scrittura di file JSON per gestire le variabili d'ambiente dei container.</li>
+                <li data-i18n="mf8">Verifica e visualizzazione dello stato di esecuzione di Docker.</li>
+                <li data-i18n="mf9">Gestione delle immagini Docker: caricamento, creazione ed eliminazione.</li>
+                <li data-i18n="mf10">Gestione dei container Docker: caricamento, rimozione ed esecuzione con configurazioni avanzate.</li>
+                <li data-i18n="mf11">Inspezione dettagliata dei container Docker.</li>
+                <li data-i18n="mf12">Gestione dei volumi Docker: caricamento, creazione e rimozione.</li>
+                <li data-i18n="mf13">Gestione delle reti Docker: caricamento, creazione, rimozione, connessione e disconnessione dei container.</li>
+                <li data-i18n="mf14">Caricamento e visualizzazione delle variabili d'ambiente dei container Docker.</li>
+                <li data-i18n="mf15">Interazione utente avanzata tramite l'interfaccia GUI.</li>
+                <li data-i18n="mf16">Lettura e scrittura di file JSON per gestire le variabili d'ambiente dei container.</li>
               </ul>
             </div>
           </div>
@@ -166,18 +172,19 @@
               <i class="bx bx-layer"></i>
               <h4>Funzionalità di DockerDesk</h4>
               <ul>
-                <li>Connessione SSH per gestire Docker su macchine Linux remote.</li>
-                <li>Caricamento e visualizzazione di immagini Docker dalla macchina remota.</li>
-                <li>Creazione ed eliminazione di immagini Docker sulla macchina remota.</li>
-                <li>Caricamento e visualizzazione di container Docker dalla macchina remota.</li>
-                <li>Rimozione ed esecuzione di container Docker sulla macchina remota con configurazioni avanzate.</li>
-                <li>Inspezione dettagliata dei container Docker sulla macchina remota.</li>
-                <li>Gestione dei volumi Docker sulla macchina remota: caricamento, creazione e rimozione.</li>
-                <li>Gestione delle reti Docker sulla macchina remota: caricamento, creazione, rimozione, connessione e disconnessione dei container.</li>
-                <li>Caricamento e visualizzazione delle variabili d'ambiente dei container Docker sulla macchina remota.</li>
-                <li>Trasferimento e decompressione di file sulla macchina remota via SSH.</li>
-                <li>Interfaccia grafica per la gestione della directory di lavoro locale e remota.</li>
-                <li>Lettura e scrittura di file JSON per gestire le variabili d'ambiente dei container Docker.</li>
+                <li data-i18n="mf17">Connessione SSH per gestire Docker su macchine Linux remote.</li>
+                <li data-i18n="mf18">Caricamento e visualizzazione di immagini Docker dalla macchina remota.</li>
+                <li data-i18n="mf19">Creazione ed eliminazione di immagini Docker sulla macchina remota.</li>
+                <li data-i18n="mf20">Caricamento e visualizzazione di container Docker dalla macchina remota.</li>
+                <li data-i18n="mf21">Rimozione ed esecuzione di container Docker sulla macchina remota con configurazioni avanzate.</li>
+                <li data-i18n="mf22">Inspezione dettagliata dei container Docker sulla macchina remota.</li>
+                <li data-i18n="mf23">Gestione dei volumi Docker sulla macchina remota: caricamento, creazione e rimozione.</li>
+                <li data-i18n="mf24">Gestione delle reti Docker sulla macchina remota: caricamento, creazione, rimozione, connessione e disconnessione dei container.</li>
+                <li data-i18n="mf25">Caricamento e visualizzazione delle variabili d'ambiente dei container Docker sulla macchina remota.</li>
+                <li data-i18n="mf26">Trasferimento e decompressione di file sulla macchina remota via SSH.</li>
+                <li data-i18n="mf27">Interfaccia grafica per la gestione della directory di lavoro locale e remota.</li>
+                <li data-i18n="mf28">Lettura e scrittura di file JSON per gestire le variabili d'ambiente dei container Docker.</li>
+
               </ul>
             </div>
           </div>
@@ -192,14 +199,14 @@
             <img src="assets/img/download.svg" class="img-fluid" alt="" data-aos="zoom-in">
           </div>
           <div class="col-lg-6 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">Download DockerDesk</h3>
-            <p data-aos="fade-up" data-aos-delay="100">
+            <h3 data-aos="fade-up" data-i18n="mf29">Download DockerDesk</h3>
+            <p data-aos="fade-up" data-aos-delay="100" data-i18n="mf30">
               DockerDesk è disponibile per il download sia come codice sorgente che come applicazione già compilata. Questo permette una grande flessibilità per sviluppatori e utenti finali, offrendo la possibilità di personalizzare o utilizzare direttamente il software in base alle proprie esigenze.
             </p>
             <div data-aos="fade-up" data-aos-delay="300">
-              <a href="https://github.com/Gioking/DockerDesk" style="margin-bottom: 10px;" target="_blank" class="btn btn-primary">Scarica il Codice Sorgente</a>
-              <a href="https://gioking.github.io/DockerDeskSite/DockerDesk64.msi" style="margin-bottom: 10px;" class="btn btn-success">Scarica DockerDesk 64bit</a>
-              <a href="https://gioking.github.io/DockerDeskSite/DockerDesk86.msi" style="margin-bottom: 10px;" class="btn btn-success">Scarica DockerDesk 32bit</a>
+              <a href="https://github.com/Gioking/DockerDesk" style="margin-bottom: 10px;" target="_blank" class="btn btn-primary" data-i18n="mf31">Scarica il Codice Sorgente</a>
+              <a href="https://gioking.github.io/DockerDeskSite/DockerDesk64.msi" style="margin-bottom: 10px;" class="btn btn-success" data-i18n="mf32">Scarica DockerDesk 64bit</a>
+              <a href="https://gioking.github.io/DockerDeskSite/DockerDesk86.msi" style="margin-bottom: 10px;" class="btn btn-success" data-i18n="mf33">Scarica DockerDesk 32bit</a>
             </div>
             <hr>
             <div data-aos="fade-up" data-aos-delay="300">
@@ -209,14 +216,15 @@
             </div>
             <hr>
             <div data-aos="fade-up" data-aos-delay="400">
-              <h4>Sostieni il Progetto</h4>
-              <p>Se apprezzi DockerDesk e vuoi supportare lo sviluppo futuro, considera di fare una piccola donazione al nostro progetto.</p>
+              <h4 data-i18n="mf34">Sostieni il Progetto</h4>
+              <p data-i18n="mf35">Se apprezzi DockerDesk e vuoi supportare lo sviluppo futuro, considera di fare una piccola donazione al nostro progetto.</p>
               <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="dockerdesk" data-color="#FFDD00" data-emoji="☕" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script>
             </div>
           </div>
         </div>
       </div>
     </section><!-- End Download Section -->
+
 
 
     <!-- ======= About Section ======= -->
@@ -227,17 +235,17 @@
             <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
           </div>
           <div class="col-lg-6 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">Chi siamo</h3>
-            <p data-aos="fade-up" data-aos-delay="100">
+            <h3 data-aos="fade-up" data-i18n="mf36">Chi siamo</h3>
+            <p data-aos="fade-up" data-aos-delay="100" data-i18n="mf37">
               DockerDesk, nato dall'innovazione e dalla passione per la tecnologia, è il tuo compagno affidabile nel mondo della dockerizzazione. Siamo un team di esperti con sede a Milano, dedicati a semplificare e ottimizzare il processo di containerizzazione delle applicazioni. La nostra missione è fornire una soluzione intuitiva e potente che permette agli sviluppatori e alle aziende di trasformare le loro idee in realtà, riducendo la complessità e aumentando l'efficienza. Con DockerDesk, portiamo la tecnologia del futuro nelle tue mani, oggi.
             </p>
             <div class="row">
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-i18n="mf38">
                 <i class="bx bx-receipt"></i>
                 <h4>Cosa facciamo</h4>
                 <p>Ci specializziamo nello sviluppo di software all'avanguardia, creando soluzioni che guidano la trasformazione digitale. La nostra expertise abbraccia un ampio spettro di tecnologie, consentendoci di realizzare applicazioni innovative e personalizzate. Siamo orgogliosi di essere un punto di riferimento per le aziende che cercano partner affidabili e competenti nel campo dello sviluppo software.</p>
               </div>
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200" data-i18n="mf39">
                 <i class="bx bx-cube-alt"></i>
                 <h4>Le tecnologie</h4>
                 <p>La nostra profonda competenza nelle tecnologie .NET ci permette di costruire soluzioni robuste e performanti, adattandoci perfettamente alle esigenze del business moderno. Utilizzando .NET Core e C#, garantiamo applicazioni sicure, scalabili e all'avanguardia.</p>
@@ -248,53 +256,6 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <!-- <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Servizi</h2>
-          <p>Scopri i nostri servizi di eccellenza nel campo dello sviluppo software</p>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-microsoft"></i></div>
-              <h4 class="title"><a href="">Sviluppo .NET Personalizzato</a></h4>
-              <p class="description">Esperti nello sviluppo di soluzioni .NET su misura, offriamo applicazioni robuste, sicure e scalabili, perfettamente integrate con l'ecosistema Microsoft.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-cog"></i></div>
-              <h4 class="title"><a href="">Automazione e Integrazione</a></h4>
-              <p class="description">Progettiamo soluzioni per automatizzare i processi aziendali, integrando applicazioni Microsoft e ottimizzando le operazioni di business.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-cloud"></i></div>
-              <h4 class="title"><a href="">Soluzioni Cloud</a></h4>
-              <p class="description">Specializzati in soluzioni cloud, offriamo servizi di sviluppo e migrazione su piattaforme Microsoft Azure per prestazioni ottimali e scalabilità.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-support"></i></div>
-              <h4 class="title"><a href="">Supporto e Manutenzione</a></h4>
-              <p class="description">Forniamo un servizio completo di supporto e manutenzione per le applicazioni Microsoft, garantendo la massima affidabilità e performance.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>End Services Section -->
-
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -303,7 +264,7 @@
 
         <div class="section-title">
           <h2>DockerDesk Local and Remote Sessions</h2>
-          <p>Immagini</p>
+          <p data-i18n="mf56">Immagini</p>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -517,196 +478,13 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= F.A.Q Section ======= -->
-    <!-- <section id="faq" class="faq section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>F.A.Q</h2>
-          <p>Frequently Asked Questions</p>
-        </div>
-
-        <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
-
-          <li>
-            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-              </p>
-            </div>
-          </li>
-
-        </ul>
-
-      </div>
-    </section>End F.A.Q Section -->
-
-    <!-- ======= Team Section ======= -->
-    <!-- <section id="team" class="team">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Team</h2>
-          <p>Il nostro team</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="member">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="member">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>End Team Section -->
-
-    <!-- ======= Clients Section ======= -->
-    <!-- <section id="clients" class="clients section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Clients</h2>
-          <p>They trusted us</p>
-        </div>
-
-        <div class="clients-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section>End Clients Section -->
-
     <!-- ======= Contact Us Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contatti</h2>
-          <p>Contattaci per iniziare</p>
+          <h2 data-i18n="mf40">Contatti</h2>
+          <p data-i18n="mf41">Contattaci per iniziare</p>
         </div>
 
         <div class="row">
@@ -716,70 +494,38 @@
               <!-- Aggiornamento Indirizzo -->
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Indirizzo:</h4>
-                <p>Milano, Italia</p>
+                <h4 data-i18n="mf42">Indirizzo:</h4>
+                <p data-i18n="mf43">Milano, Italia</p>
               </div>
 
               <!-- Aggiornamento Email -->
               <div class="email">
                 <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>gioking@gmail.com</p>
+                <h4 data-i18n="mf44">Email:</h4>
+                <p data-i18n="mf45">gioking@gmail.com</p>
               </div>
 
               <!-- Aggiornamento Numero di Telefono -->
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Telefono:</h4>
-                <p>+39 3930169324</p>
+                <h4 data-i18n="mf46">Telefono:</h4>
+                <p data-i18n="mf47">+39 3930169324</p>
               </div>
-
-              <!-- Aggiornamento Mappa Google con coordinate di Milano -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89438.03589621763!2d9.107692664280256!3d45.46420384025197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilano%2C%20Provincia%20di%20Milano%2C%20Italia!5e0!3m2!1sit!2sit!4v1647330106579" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
           </div>
 
-
-          <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group col-md-6 mt-3 mt-md-0">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required>questo form non è attivo, scrivere a gioking@gmail.com</textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div> -->
-
+          <!-- ... altro codice ... -->
         </div>
-
       </div>
-    </section><!-- End Contact Us Section -->
+    </section>
+    <!-- End Contact Us Section -->
+
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
 
-    <!-- Sezione Newsletter rimossa per brevità -->
+  <footer id="footer">
 
     <div class="footer-top">
       <div class="container">
@@ -787,43 +533,43 @@
 
           <!-- Informazioni di contatto -->
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>DockerDesk</h3>
-            <p>
+            <h3 data-i18n="mf48">DockerDesk</h3>
+            <p data-i18n="mf49">
               Sede a Milano<br>
               Italia<br><br>
-              <strong>Telefono:</strong>+39 3930169324<br>
-              <strong>Email:</strong> gioking@gmail.com<br>
+              <strong data-i18n="mf50">Telefono:</strong>+39 3930169324<br>
+              <strong data-i18n="mf51">Email:</strong> gioking@gmail.com<br>
             </p>
           </div>
 
           <!-- Link utili -->
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Link Utili</h4>
+            <h4 data-i18n="mf52">Link Utili</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">Chi Siamo</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Servizi</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Immagini</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#team">Team</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contatti</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero" data-i18n="mf53">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about" data-i18n="mf54">Chi Siamo</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services" data-i18n="mf55">Servizi</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio" data-i18n="mf56">Immagini</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#team" data-i18n="mf57">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact" data-i18n="mf58">Contatti</a></li>
             </ul>
           </div>
 
           <!-- Servizi -->
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>I Nostri Servizi</h4>
+            <h4 data-i18n="mf59">I Nostri Servizi</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Sviluppo .NET Personalizzato</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Automazione e Integrazione</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Soluzioni Cloud</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Supporto e Manutenzione</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="mf60">Sviluppo .NET Personalizzato</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="mf61">Automazione e Integrazione</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="mf62">Soluzioni Cloud</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="mf63">Supporto e Manutenzione</a></li>
             </ul>
           </div>
 
           <!-- Social Network -->
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>I Nostri Social Network</h4>
-            <p>Seguici sui nostri social network per rimanere aggiornato.</p>
+            <h4 data-i18n="mf64">I Nostri Social Network</h4>
+            <p data-i18n="mf65">Seguici sui nostri social network per rimanere aggiornato.</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -839,7 +585,7 @@
 
     <!-- Disclaimer -->
     <div class="container text-left mt-4">
-      <span class="disclaimer">
+      <span class="disclaimer" data-i18n="mf66">
         Tutti i marchi, loghi, immagini e contenuti presenti su questo sito sono di proprietà dei rispettivi titolari.
         Questo sito non è affiliato con alcuna delle aziende o marchi citati e tutti i diritti sono riservati ai legittimi proprietari.
       </span>
@@ -855,6 +601,7 @@
     </div>
   </footer>
 
+
   <!-- End Footer -->
 
 
@@ -869,7 +616,12 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <script src="https://unpkg.com/i18next/i18next.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+
   <!-- Template Main JS File -->
+  <script src="assets/js/app.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
